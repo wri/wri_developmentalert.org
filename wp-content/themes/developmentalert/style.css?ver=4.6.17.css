@@ -1,0 +1,1990 @@
+/*
+Theme Name: Development Alert
+Theme URI: http://joslex.com/
+Author: Joslex, LLC
+Author URI: http://joslex.com/
+Version: 1.0
+*/
+/*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE6/7/8/9 & FF3.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+/*
+ * Corrects `inline-block` display not defined in IE6/7/8/9 & FF3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/*
+ * Addresses styling for `hidden` attribute not present in IE7/8/9, FF3, S4.
+ * Known issue: no IE6 support.
+ */
+[hidden] {
+  display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+/*
+ * Addresses margins handled incorrectly in IE6/7.
+ */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+:focus,
+a:focus {
+  outline: none;
+}
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses font sizes and margins set differently in IE6/7.
+ * Addresses font sizes within `section` and `article` in FF4+, Chrome, S5.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/*
+ * Addresses style set to `bolder` in FF3+, S4/5, Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+blockquote {
+  margin: 1em 40px;
+}
+/*
+ * Addresses styling not present in S5, Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/*
+ * Addresses styling not present in IE6/7/8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+p,
+pre {
+  margin: 1em 0;
+}
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome.
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+/*
+ * Addresses CSS quotes not supported in IE6/7.
+ */
+q {
+  quotes: none;
+}
+/*
+ * Addresses `quotes` property not supported in S4.
+ */
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+small {
+  font-size: 75%;
+}
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ * gist.github.com/413930
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/*
+ * Addresses margins set differently in IE6/7.
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0 0 0 40px;
+}
+/*
+ * Addresses paddings set differently in IE6/7.
+ */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+/*
+ * Corrects list images handled incorrectly in IE7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside `a` element in IE6/7/8/9, FF3.
+ * 2. Improves image quality when scaled in IE7.
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+/*
+ * Corrects overflow displayed oddly in IE9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11.
+ */
+figure {
+  margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7.
+ */
+form {
+  margin: 0;
+}
+/*
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9.
+ * 2. Corrects text not wrapping in FF3.
+ * 3. Corrects alignment displayed oddly in IE6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+/*
+ * Addresses FF3/4 setting `line-height` on `input` using `!important` in the
+ * UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+/*
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9.
+ * 2. Removes excess padding in IE8/9.
+ * 3. Removes excess padding in IE7.
+ *    Known issue: excess padding remains in IE6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+/*
+ * 1. Addresses `appearance` set to `searchfield` in S5, Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in S5, Chrome (include `-moz`
+ *    to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/*
+ * Removes inner padding and border in FF3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/******************************************************************
+CUSTOMIZED RESET VALUES
+I added these extra styles as a more personalized reset. Feel free
+to remove them if you like or add your own. If you want to update
+the normalize styles, make sure to edit from this point up.
+******************************************************************/
+ul,
+ol {
+  padding: 0;
+  list-style-type: none;
+}
+dd {
+  margin: 0;
+}
+/* proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens) */
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -epub-hyphens: auto;
+  hyphens: auto;
+}
+b,
+strong,
+.strong {
+  font-weight: bold;
+}
+dfn,
+em,
+.em {
+  font-style: italic;
+}
+small,
+.small {
+  font-size: 75%;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+body {
+  color: #1a1a1a;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  word-break: normal;
+  word-wrap: normal;
+}
+a,
+a:visited {
+  color: #1e4373;
+  outline: none;
+  transition: color 0.3s;
+}
+a:link {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a:active,
+a:focus,
+a:hover {
+  color: #285b9c;
+}
+table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  text-align: left;
+  width: 100%;
+}
+table td,
+table th {
+  vertical-align: top;
+}
+table td {
+  border-bottom: 2px solid #ececec;
+  padding: 16px 10px;
+}
+table th {
+  background: #f2f2f2;
+  border-bottom: 2px solid #ececec;
+  padding: 8px 10px;
+}
+[class^="esri"] table {
+  border-collapse: inherit;
+  box-sizing: inherit;
+  text-align: inherit;
+  width: inherit;
+}
+[class^="esri"] table td,
+[class^="esri"] table th {
+  vertical-align: inherit;
+}
+[class^="esri"] table td {
+  border-bottom: inherit;
+  padding: inherit;
+}
+[class^="esri"] table th {
+  background: inherit;
+  border-bottom: inherit;
+  padding: inherit;
+}
+table,
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 15px 0;
+}
+table:first-child,
+p:first-child,
+ul:first-child,
+ol:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+table:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin-top: 45px;
+}
+h1 + h1,
+h2 + h1,
+h3 + h1,
+h4 + h1,
+h5 + h1,
+h6 + h1,
+h1 + h2,
+h2 + h2,
+h3 + h2,
+h4 + h2,
+h5 + h2,
+h6 + h2,
+h1 + h3,
+h2 + h3,
+h3 + h3,
+h4 + h3,
+h5 + h3,
+h6 + h3,
+h1 + h4,
+h2 + h4,
+h3 + h4,
+h4 + h4,
+h5 + h4,
+h6 + h4,
+h1 + h5,
+h2 + h5,
+h3 + h5,
+h4 + h5,
+h5 + h5,
+h6 + h5,
+h1 + h6,
+h2 + h6,
+h3 + h6,
+h4 + h6,
+h5 + h6,
+h6 + h6 {
+  margin-top: -15px;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+article {
+  position: relative;
+  zoom: 1;
+}
+article:before,
+article:after {
+  content: "";
+  display: table;
+}
+article:after {
+  clear: both;
+}
+article + article {
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+h1 > img,
+h2 > img,
+h3 > img,
+h4 > img,
+h5 > img,
+h6 > img {
+  margin-bottom: 10px;
+}
+h1 > img:last-child,
+h2 > img:last-child,
+h3 > img:last-child,
+h4 > img:last-child,
+h5 > img:last-child,
+h6 > img:last-child {
+  margin-bottom: 0;
+}
+iframe {
+  border: 0;
+  max-width: 100%;
+}
+img {
+  height: auto !important;
+  max-width: 100%;
+}
+article ul,
+article ol {
+  list-style: disc;
+  margin-bottom: 30px;
+  padding-left: 15px;
+}
+article ul li + li,
+article ol li + li {
+  margin-top: 7.5px;
+}
+article ol {
+  list-style: decimal;
+}
+hr {
+  background: #ccc;
+  border: 0;
+  height: 1px;
+  margin: 30px 0;
+  overflow: hidden;
+}
+hr + h1,
+hr + h2,
+hr + h3,
+hr + h4,
+hr + h5,
+hr + h6 {
+  margin-top: 15px;
+}
+.screen-reader-text {
+  display: none;
+}
+.entry-header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+.entry-title + .meta {
+  color: #999;
+  font-weight: 600;
+  margin-top: -15px;
+}
+.notice {
+  background: #eff4f4;
+  border: 1px solid #d4dddd;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 10px;
+}
+.notice:last-child:first-child {
+  margin-top: 0;
+}
+.notice a {
+  color: #586565;
+}
+.notice a:active,
+.notice a:focus,
+.notice a:hover {
+  color: #819a9a;
+}
+.nav-links {
+  zoom: 1;
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.nav-links:before,
+.nav-links:after {
+  content: "";
+  display: table;
+}
+.nav-links:after {
+  clear: both;
+}
+.nav-links .nav-previous {
+  float: left;
+}
+.nav-links .nav-next {
+  float: right;
+}
+.button,
+.button:link,
+.button:visited,
+button,
+input[type="submit"],
+input[type="button"] {
+  background: #009900;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.button:active,
+.button:link:active,
+.button:visited:active,
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+.button:focus,
+.button:link:focus,
+.button:visited:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+.button:hover,
+.button:link:hover,
+.button:visited:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background: #00cc00;
+  color: #fff;
+}
+input:not([type=hidden]):not([type=button]):not([type=submit]):not([type=checkbox]):not([type=radio]):not([type=image]):not([type=range]),
+textarea {
+  background: #fff;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #000;
+  display: inline-block;
+  font-size: 14px;
+  height: 30px;
+  line-height: 20px;
+  padding: 3px 5px;
+}
+textarea {
+  height: 130px;
+}
+.shortcode-row {
+  zoom: 1;
+  width: 100%;
+}
+.shortcode-row:before,
+.shortcode-row:after {
+  content: "";
+  display: table;
+}
+.shortcode-row:after {
+  clear: both;
+}
+.shortcode-row + .shortcode-row,
+p + .shortcode-row {
+  margin-top: 40px;
+}
+[class*="shortcode-col_"] {
+  box-sizing: border-box;
+  float: left;
+}
+.shortcode-col_1_2,
+.shortcode-col_2_4 {
+  width: 50%;
+}
+.shortcode-col_1_2:last-child,
+.shortcode-col_2_4:last-child {
+  padding: 0 0 0 20px;
+}
+.shortcode-col_1_2:first-child,
+.shortcode-col_2_4:first-child {
+  padding: 0 20px 0 0;
+}
+.shortcode-col_1_3 {
+  padding: 0 13.33333333px;
+  width: 33.33%;
+}
+.shortcode-col_1_3:last-child {
+  padding: 0 0 0 26.66666667px;
+}
+.shortcode-col_1_3:first-child {
+  padding: 0 26.66666667px 0 0;
+}
+.shortcode-col_2_3 {
+  padding: 0 13.33333333px;
+  width: 66.66%;
+}
+.shortcode-col_2_3:last-child {
+  padding: 0 0 13.33333333px 0;
+}
+.shortcode-col_2_3:first-child {
+  padding: 0 13.33333333px 0 0;
+}
+/* Structure
+-------------------------------------------------------------- */
+html,
+body {
+  min-height: 100%;
+}
+html {
+  min-width: 1020px;
+}
+body {
+  position: relative;
+}
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 980px;
+}
+.alignleft {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+.alignright {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+/* Header
+-------------------------------------------------------------- */
+#head {
+  background: #285b9c;
+  height: 90px;
+  position: relative;
+  z-index: 99;
+}
+#head .logo {
+  background: url(media/images/logo.png) no-repeat center;
+  float: left;
+  height: 90px;
+  margin: 0;
+  width: 284px;
+}
+#head .logo a {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 100%;
+}
+#head .shareButtons {
+  background: #fff;
+  float: right;
+  margin-top: 24px;
+  padding: 5px 3px 0;
+}
+#head nav.desktop {
+  float: right;
+}
+#head nav.desktop ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#head nav.desktop li {
+  float: left;
+  margin-left: 10px;
+  position: relative;
+}
+#head nav.desktop li:hover .sub-menu {
+  display: block;
+}
+#head nav.desktop a {
+  border-bottom: 8px solid transparent;
+  color: #fff;
+  display: block;
+  font-weight: 700;
+  height: 82px;
+  line-height: 90px;
+  padding: 0 5px;
+  text-decoration: none;
+  transition: 0.3s border;
+}
+#head nav.desktop a:active,
+#head nav.desktop a:focus,
+#head nav.desktop a:hover {
+  border-color: #ffcc00;
+}
+#head nav.desktop .sub-menu {
+  background: #537cb0;
+  display: none;
+  padding: 5px 0;
+  position: absolute;
+  right: 0;
+  top: 75px;
+}
+#head nav.desktop .sub-menu:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #537cb0;
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  right: 10px;
+  top: -10px;
+  width: 0;
+  z-index: 2;
+}
+#head nav.desktop .sub-menu li {
+  float: none;
+  margin: 0;
+}
+#head nav.desktop .sub-menu a {
+  border: 0;
+  display: block;
+  height: auto;
+  line-height: 15px;
+  padding: 10px;
+  transition: 0.3s background;
+  white-space: nowrap;
+}
+#head nav.desktop .sub-menu a:active,
+#head nav.desktop .sub-menu a:focus,
+#head nav.desktop .sub-menu a:hover {
+  background: #7596c0;
+}
+#head nav.mobile {
+  display: none;
+}
+/*#head nav .current-menu-item a,
+.projects-archive #head nav .projects-parent a,
+.projects-single #head nav .projects-parent a {
+	border-color: @yellow-color;
+}*/
+/* Body
+-------------------------------------------------------------- */
+#content {
+  margin-top: 30px;
+}
+#primary {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 980px;
+}
+#primary,
+#secondary {
+  padding-bottom: 60px;
+}
+.has-sidebar #primary {
+  float: right;
+  left: -50%;
+  margin-right: -490px;
+  position: relative;
+  width: 730px;
+}
+.front-page.has-sidebar #primary {
+  float: none;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 980px;
+}
+.widget ul {
+  list-style: none;
+}
+.widget ul li + li {
+  border-top: 1px solid #dfe7ea;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.widget ul.menu a {
+  text-decoration: none;
+}
+.widget + .widget {
+  margin-top: 40px;
+}
+.widget-title {
+  border-bottom: 1px solid #dfe7ea;
+  padding-bottom: 4px;
+}
+.widget_nav_menu {
+  text-align: right;
+}
+.widget_nav_menu .widget-title {
+  border: 0;
+}
+.widget_nav_menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.widget_nav_menu ul li + li {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+.widget_nav_menu a {
+  color: #000;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+}
+.widget_nav_menu a:active,
+.widget_nav_menu a:focus,
+.widget_nav_menu a:hover {
+  color: #285b9c;
+}
+.widget_nav_menu .current-menu-item {
+  overflow: hidden;
+  padding-right: 40px;
+  position: relative;
+  width: 100%;
+}
+.widget_nav_menu .current-menu-item a {
+  border: solid #dfe7ea;
+  border-width: 1px 0;
+  color: #285b9c;
+  padding: 9px 0;
+}
+#secondary {
+  float: left;
+  left: 50%;
+  margin-left: -490px;
+  position: relative;
+  width: 220px;
+}
+#secondary .button {
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+}
+#secondary h1,
+#secondary h2,
+#secondary h3,
+#secondary h4,
+#secondary h5,
+#secondary h6 {
+  margin-bottom: 7.5px;
+  margin-top: 15px;
+}
+#secondary p {
+  margin: 7.5px 0;
+}
+#tertiary {
+  background: #f0efef url(media/images/tertiary-bg.png) repeat-x;
+  clear: both;
+  margin: 30px 0 0;
+  padding: 20px 0;
+}
+#tertiary .inner-sidebar {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 980px;
+  zoom: 1;
+  overflow: hidden;
+}
+#tertiary .inner-sidebar:before,
+#tertiary .inner-sidebar:after {
+  content: "";
+  display: table;
+}
+#tertiary .inner-sidebar:after {
+  clear: both;
+}
+#tertiary .widget {
+  border-left: 1px solid #b4afa9;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: -180px;
+  padding: 20px 40px 200px;
+  width: 33.33%;
+}
+#tertiary .widget:first-child {
+  border-left: 0;
+}
+#tertiary .widget + .widget {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 20px;
+}
+#tertiary .widget_text {
+  text-align: center;
+}
+#tertiary .widget_text a:first-child:last-child {
+  display: block;
+  height: 100%;
+  margin: -20px -40px -200px;
+  padding: 20px 40px 200px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s background;
+}
+#tertiary .widget_text a:first-child:last-child:active,
+#tertiary .widget_text a:first-child:last-child:focus,
+#tertiary .widget_text a:first-child:last-child:hover {
+  background: #fff;
+}
+#tertiary .widget_text h2 {
+  color: #285b9c;
+  font-weight: 500;
+  margin-top: 0;
+}
+#tertiary .widget_text p {
+  color: #545454;
+}
+table td,
+table th {
+  border-bottom: 1px solid #dfe7ea;
+  vertical-align: middle;
+}
+/* Footer
+-------------------------------------------------------------- */
+#floor {
+  background: #285b9c;
+  margin-top: 0;
+  padding: 15px 0;
+}
+#floor .wrap {
+  background: url(media/images/footer-logos.png) no-repeat right;
+  height: 49px;
+}
+.front-page {
+  background: url(media/images/background.jpg) no-repeat center top;
+  background-size: cover;
+}
+.front-page #head {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 40px;
+}
+.front-page #content {
+  margin: 0;
+  padding: 100px 0;
+}
+.front-page #content .wrap {
+  width: 100%;
+}
+.front-page #primary {
+  margin: 0 auto;
+  padding-bottom: 0;
+  width: 800px;
+}
+.front-page #primary h1 {
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+}
+.front-page #tertiary {
+  background: rgba(255, 255, 255, 0.8) !important;
+  background: #fff;
+}
+.front-page #tertiary .wrap {
+  width: 980px;
+}
+.front-page #tertiary li:before {
+  content: "\2022";
+  margin-right: 10px;
+}
+.front-page #Joslex_GISProjects_CountrySelectorForm {
+  margin: 40px auto 60px;
+}
+.front-page #floor {
+  display: none;
+}
+#Joslex_GISProjects_CountrySelectorForm {
+  background: rgba(0, 0, 0, 0.8) !important;
+  background: #000;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  width: 320px;
+}
+#Joslex_GISProjects_CountrySelectorForm h3 {
+  color: #fe9901;
+  font-weight: 500;
+}
+#Joslex_GISProjects_CountrySelectorForm label {
+  color: #b0c1cb;
+  font-size: 16px;
+}
+#Joslex_GISProjects_CountrySelectorForm select {
+  width: 80%;
+}
+#Joslex_GISProjects_CountrySelectorForm button {
+  font-weight: 300;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 16%;
+}
+.Joslex_GISProjects {
+  zoom: 1;
+}
+.Joslex_GISProjects:before,
+.Joslex_GISProjects:after {
+  content: "";
+  display: table;
+}
+.Joslex_GISProjects:after {
+  clear: both;
+}
+.Joslex_GISProjects #project-title {
+  margin: 0 0 30px;
+}
+.Joslex_GISProjects .addthis_sharing_toolbox {
+  float: right;
+  line-height: 28.8px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 10;
+}
+.Joslex_GISProjects .breadcrumbs a {
+  text-decoration: none;
+}
+.Joslex_GISProjects .map-wrap {
+  background: url(media/images/loading.gif) no-repeat center 140px;
+  min-height: 340px;
+  margin-bottom: 30px;
+}
+.Joslex_GISProjects .map-wrap:last-child {
+  margin-bottom: 0;
+}
+.Joslex_GISProjects .contentTabs {
+  border-bottom: 1px solid #dfe7ea;
+  height: 30px;
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+.Joslex_GISProjects .contentTabs li {
+  float: left;
+  margin-right: 4px;
+}
+.Joslex_GISProjects .contentTabs a {
+  color: #545454;
+  display: block;
+  font-weight: 700;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+.Joslex_GISProjects .contentTabs a.active {
+  background: #dfe7ea;
+  color: #285b9c;
+}
+.Joslex_GISProjects .photoGallery {
+  margin-bottom: 30px;
+  padding: 0 50px;
+  position: relative;
+}
+.Joslex_GISProjects .photoGallery .slide {
+  overflow: auto;
+  width: auto;
+}
+.Joslex_GISProjects .photoGallery .offset {
+  height: 80px;
+  overflow: hidden;
+}
+.Joslex_GISProjects .photoGallery .photo {
+  float: left;
+  width: 178px;
+}
+.Joslex_GISProjects .photoGallery .photo + .photo {
+  margin-left: 10px;
+}
+.Joslex_GISProjects .photoGallery .goLeft,
+.Joslex_GISProjects .photoGallery .goRight {
+  display: block;
+  height: 27px;
+  margin-top: -13px;
+  position: absolute;
+  top: 50%;
+  width: 28px;
+}
+.Joslex_GISProjects .photoGallery .goLeft {
+  background: url(media/images/icon-goleft.png);
+  left: 0;
+}
+.Joslex_GISProjects .photoGallery .goRight {
+  background: url(media/images/icon-goright.png);
+  right: 0;
+}
+.Joslex_GISProjects .mainContent {
+  float: left;
+  width: 700px;
+}
+.Joslex_GISProjects .mainContent .section-title {
+  color: #285b9c;
+  padding-bottom: 4px;
+}
+.Joslex_GISProjects .sidebarContent {
+  background: #f8f8f8;
+  float: right;
+  padding: 10px;
+  width: 240px;
+}
+.Joslex_GISProjects .sidebarContent .widget-title {
+  margin-top: 0;
+}
+.Joslex_GISProjects .sidebarContent .menu .button {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+}
+.Joslex_GISProjects .sidebarContent .menu .button + .button {
+  margin-top: 5px;
+}
+.Joslex_GISProjects .sidebarContent h3 {
+  border: 0;
+  color: #285b9c;
+}
+.Joslex_GISProjects .sidebarContent h6 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+.Joslex_GISProjects .sidebarContent .document-list {
+  font-size: 12px;
+}
+.Joslex_GISProjects .sidebarContent .document-list li {
+  background: url(media/images/icon-pdf.png) no-repeat;
+  min-height: 24px;
+  padding-left: 30px;
+}
+.Joslex_GISProjects .sidebarContent .document-list li + li {
+  background-position: 0 10px;
+}
+.Joslex_GISProjects .sidebarContent .document-list a {
+  color: #555;
+  text-decoration: none;
+}
+.Joslex_GISProjects .sidebarContent .document-list a:active,
+.Joslex_GISProjects .sidebarContent .document-list a:focus,
+.Joslex_GISProjects .sidebarContent .document-list a:hover {
+  text-decoration: underline;
+}
+.Joslex_GISProjects .sidebarContent .alert-list {
+  font-size: 12px;
+}
+.Joslex_GISProjects .sidebarContent .alert-list li {
+  background: url(media/images/icon-alert.png) no-repeat left 4px;
+  padding-left: 30px;
+}
+.Joslex_GISProjects .sidebarContent .alert-list li + li {
+  background-position: 0 10px;
+}
+.Joslex_GISProjects .sidebarContent .subscribe-button {
+  background: #ffcc00;
+  color: #000;
+  float: right;
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+}
+.Joslex_GISProjects .infoContainer {
+  zoom: 1;
+}
+.Joslex_GISProjects .infoContainer:before,
+.Joslex_GISProjects .infoContainer:after {
+  content: "";
+  display: table;
+}
+.Joslex_GISProjects .infoContainer:after {
+  clear: both;
+}
+.Joslex_GISProjects .infoTitle {
+  border-top: 1px solid #dfe7ea;
+  box-sizing: border-box;
+  clear: left;
+  float: left;
+  font-weight: 700;
+  padding: 10px;
+  width: 30%;
+}
+.Joslex_GISProjects .infoTitle:nth-child(1) {
+  border-top: 0;
+}
+.Joslex_GISProjects .infoItem {
+  border-top: 1px solid #dfe7ea;
+  box-sizing: border-box;
+  float: left;
+  padding: 10px;
+  width: 70%;
+}
+.Joslex_GISProjects .infoItem:nth-child(2) {
+  border-top: 0;
+}
+.Joslex_GISProjects #mapContainer {
+  margin-bottom: 30px;
+}
+.Joslex_GISProjects #mapContainer + div {
+  color: #285b9c;
+  font-size: 22px;
+}
+.Joslex_GISProjects #projectGrid {
+  margin-left: -10px;
+  margin-top: 30px;
+  width: 1000px;
+  zoom: 1;
+}
+.Joslex_GISProjects #projectGrid:before,
+.Joslex_GISProjects #projectGrid:after {
+  content: "";
+  display: table;
+}
+.Joslex_GISProjects #projectGrid:after {
+  clear: both;
+}
+.Joslex_GISProjects #projectGrid .project {
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  width: 33.33%;
+}
+.Joslex_GISProjects #projectGrid .project button {
+  background: url(media/images/icon-grey-alerts.png) no-repeat 5px center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: #333;
+  display: block;
+  float: left;
+  font-weight: 400;
+  height: 36px;
+  line-height: 26px;
+  margin-top: 10px;
+  padding: 5px 10px 5px 35px;
+  text-decoration: none;
+  width: 40%;
+}
+.Joslex_GISProjects #projectGrid .project button + button {
+  background-image: url(media/images/icon-grey-comments.png);
+  border-left: 0;
+  width: 60%;
+}
+.Joslex_GISProjects #projectGrid .projectHeader .icon {
+  float: left;
+  position: relative;
+  top: 10px;
+}
+.Joslex_GISProjects #projectGrid h5 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-left: 31px;
+  padding: 10px 0;
+}
+.Joslex_GISProjects #projectGrid h5 a {
+  color: #545454;
+  text-decoration: none;
+}
+.Joslex_GISProjects #projectGrid .thumbnail {
+  background: #eee;
+  display: block;
+  height: 140px !important;
+  height: 140px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.Joslex_GISProjects #projectGrid .thumbnail img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.projects-home #primary,
+.projects-archive #primary,
+.projects-single #primary,
+.projects-home #secondary,
+.projects-archive #secondary,
+.projects-single #secondary {
+  float: none;
+  left: 0;
+  margin-bottom: 30px;
+  padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 980px;
+}
+.projects-home #secondary,
+.projects-archive #secondary,
+.projects-single #secondary {
+  margin-top: -60px;
+  overflow: hidden;
+}
+.projects-home #secondary .inner-sidebar,
+.projects-archive #secondary .inner-sidebar,
+.projects-single #secondary .inner-sidebar {
+  zoom: 1;
+  margin-left: -15px;
+  overflow: hidden;
+  width: 1010px;
+}
+.projects-home #secondary .inner-sidebar:before,
+.projects-archive #secondary .inner-sidebar:before,
+.projects-single #secondary .inner-sidebar:before,
+.projects-home #secondary .inner-sidebar:after,
+.projects-archive #secondary .inner-sidebar:after,
+.projects-single #secondary .inner-sidebar:after {
+  content: "";
+  display: table;
+}
+.projects-home #secondary .inner-sidebar:after,
+.projects-archive #secondary .inner-sidebar:after,
+.projects-single #secondary .inner-sidebar:after {
+  clear: both;
+}
+.projects-home #secondary .widget,
+.projects-archive #secondary .widget,
+.projects-single #secondary .widget {
+  box-sizing: border-box;
+  float: left;
+  margin: 30px 0 0;
+  padding: 0 15px;
+  width: 33.33%;
+}
+.projects-home #secondary .widget-title,
+.projects-archive #secondary .widget-title,
+.projects-single #secondary .widget-title {
+  color: #285b9c;
+  font-weight: 500;
+}
+.modalWindow {
+  background: rgba(255, 255, 255, 0.75);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+}
+.modalWindow > .modal {
+  background: #3273c5;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  color: #fff;
+  left: 50%;
+  margin: 0 0 0 -250px;
+  padding: 20px 30px;
+  position: fixed;
+  top: 50%;
+  width: 500px;
+}
+.modalWindow > .modal .close {
+  background: #ffffff url(media/images/icon-close.png) no-repeat center;
+  background-size: 10px;
+  border-radius: 10px;
+  height: 20px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+}
+.modalWindow > .modal h3 {
+  color: #fff;
+  margin-top: 0;
+}
+.modalWindow > .modal .radios {
+  margin-bottom: 20px;
+}
+.modalWindow > .modal .name,
+.modalWindow > .modal .email {
+  margin-top: 10px;
+}
+.modalWindow > .modal .name input,
+.modalWindow > .modal .email input {
+  border: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+.modalWindow > .modal button,
+.modalWindow > .modal .button {
+  background: #eaeff5;
+  color: #285b9c;
+  margin-top: 20px;
+}
+.modalWindow > .modal button:active,
+.modalWindow > .modal .button:active,
+.modalWindow > .modal button:focus,
+.modalWindow > .modal .button:focus,
+.modalWindow > .modal button:hover,
+.modalWindow > .modal .button:hover {
+  background: #fff;
+}
+.Joslex_GISSubscriptionAlert {
+  background: #3273c5;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+}
+.subscribe-notice {
+  position: relative;
+}
+.subscribe-notice:after,
+.subscribe-notice:before {
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #eff4f4;
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  right: 33px;
+  top: -11px;
+  width: 0;
+  z-index: 2;
+}
+.subscribe-notice:before {
+  border-bottom-color: #d4dddd;
+  top: -12px;
+  z-index: 1;
+}
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a:after,
+  a:visited:after {
+    content: " (" attr(href) ")";
+  }
+  a abbr[title]:after,
+  a:visited abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  .sidebar,
+  .page-navigation,
+  .wp-prev-next,
+  .respond-form,
+  nav {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  html {
+    min-width: inherit;
+  }
+  .wrap {
+    padding: 0 20px;
+    width: auto !important;
+  }
+  .hide-on-mobile {
+    display: none;
+  }
+  .mobile-menu-is-active {
+    padding-top: 60px;
+  }
+  .mobile-menu-is-active #head {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  #head {
+    height: 60px;
+  }
+  #head .logo {
+    background-size: 100%;
+    height: 60px;
+    width: 190px;
+  }
+  #head .shareButtons {
+    margin-top: 9px;
+  }
+  #head nav {
+    display: none;
+  }
+  #head nav.mobile {
+    background: url(media/images/icon-menu.png) no-repeat center;
+    display: block;
+    float: right;
+    height: 60px;
+    margin-right: -20px;
+    width: 60px;
+  }
+  #head nav.mobile > ul {
+    background: rgba(0, 0, 0, 0.75);
+    bottom: 0;
+    display: none;
+    left: 0;
+    margin: 0;
+    overflow: auto;
+    padding: 20px 20px 80px;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    z-index: 999;
+  }
+  #head nav.mobile > ul a {
+    color: #fff !important;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0 !important;
+    text-decoration: none;
+  }
+  #head nav.mobile > ul ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+  }
+  #head nav.mobile > .close {
+    background: #000;
+    bottom: 0;
+    color: #fff !important;
+    display: none;
+    font-weight: 600;
+    height: 60px;
+    left: 0;
+    line-height: 60px;
+    padding: 0 20px;
+    position: fixed;
+    right: 0;
+    text-decoration: none;
+    z-index: 1000;
+  }
+  #head nav.mobile.focus > * {
+    display: block;
+  }
+  #content {
+    margin: 0;
+    overflow: hidden;
+    padding: 20px 0 0 !important;
+  }
+  /*.map-wrap,
+#mapContainer {
+	display: none;
+}*/
+  .front-page #head .mobile {
+    display: none;
+  }
+  .front-page #content {
+    margin: 0;
+    padding: 60px 0 0 !important;
+  }
+  .front-page #tertiary .wrap {
+    padding: 20px !important;
+  }
+  #primary {
+    margin: 0 !important;
+    padding: 0 20px !important;
+    width: auto !important;
+  }
+  #mapContainer {
+    margin: 0 -20px 0 !important;
+    width: auto !important;
+  }
+  #filtersContainer {
+    max-height: 80% !important;
+    max-width: 80% !important;
+    overflow: hidden;
+  }
+  #search {
+    width: 140px !important;
+  }
+  #secondary,
+  #tertiary {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+  #secondary .inner-sidebar,
+  #tertiary .inner-sidebar {
+    margin: 0 !important;
+    width: auto !important;
+  }
+  #secondary .widget,
+  #tertiary .widget {
+    float: none;
+    margin: 0 20px !important;
+    padding: 20px 0 !important;
+    width: auto !important;
+  }
+  #secondary .widget + .widget,
+  #tertiary .widget + .widget {
+    border: 0 !important;
+  }
+  #secondary .widget-title,
+  #tertiary .widget-title {
+    background: #dfe7ea;
+    height: 30px !important;
+    line-height: 30px !important;
+    border: 0 !important;
+    margin: -20px -20px 20px !important;
+    padding: 0 20px !important;
+  }
+  #tertiary .widget_text a:first-child:last-child {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #floor .wrap {
+    background-position: center;
+    background-size: 300px;
+    height: 40px;
+  }
+  .Joslex_GISProjects #mapContainer + div {
+    margin: 0 -20px !important;
+    padding: 10px 20px !important;
+    text-align: center;
+  }
+  .Joslex_GISProjects #projectGrid {
+    margin: 20px 0 0 !important;
+    width: auto !important;
+  }
+  .Joslex_GISProjects #projectGrid .project {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .Joslex_GISProjects #projectGrid .project + .project {
+    border-top: 1px solid #dfe7ea !important;
+    padding-top: 20px !important;
+  }
+  .Joslex_GISProjects .map-wrap {
+    margin-bottom: 20px !important;
+  }
+  .Joslex_GISProjects .mainContent,
+  .Joslex_GISProjects .sidebarContent {
+    float: none !important;
+    width: auto !important;
+  }
+  .Joslex_GISProjects .sidebarContent {
+    background: none !important;
+    margin: 20px 0 !important;
+    padding: 0 !important;
+  }
+  .has-sidebar #primary,
+  .has-sidebar #secondary {
+    float: none !important;
+    left: 0 !important;
+    margin: 0 !important;
+    padding-top: 40px !important;
+    width: auto !important;
+  }
+  /*.has-sidebar #secondary {
+	margin-top: 40px !important;
+}*/
+  .alignleft,
+  .alignright {
+    float: none !important;
+    margin: 0 !important;
+  }
+  #Joslex_GISProjects_CountrySelectorForm {
+    width: auto !important;
+  }
+  .with_frm_style .frm_form_fields input,
+  #wpcontent .with_frm_style .frm_form_fields select,
+  .with_frm_style .frm_form_fields select,
+  .with_frm_style .frm_form_fields textarea {
+    max-width: 400px !important;
+    width: 100% !important;
+  }
+  .projects-home #content,
+  .projects-home #secondary {
+    padding: 0 !important;
+  }
+  .modalWindow > .modal {
+    bottom: 10px;
+    left: 10px;
+    margin: 0 !important;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: auto;
+  }
+  .modalWindow > .modal form {
+    height: 100%;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,23 @@
+(function($) {
+
+	$(document).ready(function() {
+	
+		$("#head nav.mobile").click(function(e) {
+		
+			$("body").toggleClass("mobile-menu-is-active");
+			$(this).toggleClass("focus");
+			e.stopPropagation();
+						
+		});
+		
+		$("body, #head nav.mobile > ul").click(function(e) {
+		
+			$("body").removeClass("mobile-menu-is-active");
+			$("nav.mobile").removeClass("focus");
+			e.stopPropagation();
+			
+		});
+		
+	});
+	
+})(jQuery);
